@@ -1,17 +1,19 @@
+'use strict';
+
 var app = angular.module('tournamentApp', [
 	'ngRoute',
-	'Controllers']);
+	'tournamentCtrl']);
 
 app.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.
 			when('/bracket', {
-				templateUrl: '../partials/bracket-page.html',
-				controller: 'BracketController'
+				templateUrl: 'partials/bracket-page.html',
+				controller: 'BracketCtrl'
 			}).
 			when('/prize', {
-				templateUrl: '../partials/prize-page.html',
-				controller: 'PrizeController'
+				templateUrl: 'partials/prize-page.html',
+				controller: 'PrizeCtrl'
 			}).
 			otherwise({
 				redirectTo: '/bracket'

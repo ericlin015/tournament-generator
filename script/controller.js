@@ -1,5 +1,7 @@
-var controllers = angular.module('Controller', []);
+'use strict';
 
-controllers.module('BracketController', []);
+var controllers = angular.module('tournamentCtrl', []);
 
-controllers.module('PrizeController', []);
+controllers.controller('BracketCtrl', []);
+
+controllers.controller('PrizeCtrl', []);
