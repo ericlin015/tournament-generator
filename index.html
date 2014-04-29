@@ -3,18 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<title>Tournament Generator</title>
+	<link rel="stylesheet" href="./css/app.css">
 
 	<script src="./libraries/angular.min.js"></script>
-  <script src="./libraries/angular-route.js"></script>
+  	<script src="./libraries/angular-route.js"></script>
 
 	<script src="./script/app.js"></script>
 	<script src="./script/controller.js"></script>
+	<script src="./script/directives.js"></script>
 
 </head>
 
 <body>
-  <div class="view-container">
-    <div ng-view class="view-frame"></div>
-  </div>
+	<div class="main-container">
+		<!-- Cover page -->
+		<div class="cover-container">
+			<h1>Tournament Generator</h1>
+		</div>
+		<!-- Menu -->
+		<div class="menu-container">
+			<ul>
+				<li><a href="#/home">Home</a></li>
+				<li><a href="#/bracket">Bracket</a></li>
+				<li><a href="#/prize">Prize</a></li>
+			</ul>
+		</div>
+		<!--Main view -->
+		<div class="view-container">
+	  		<div ng-view class="view-frame"></div>
+		</div>
+	</div>
 </body>
 </html>

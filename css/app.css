@@ -1,0 +1,157 @@
+.main-container {
+	width: 800px;
+	margin: auto;
+	color: #16A085;
+	font-family: sans-serif;
+}
+
+.cover-container {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 40px;
+}
+
+.menu-container {
+/*	border: solid;
+	border-radius: 2px;*/
+	background-color: #2C3E50;
+	color: white;
+	font-size: 200%;
+	overflow: hidden;
+	font-family: sans-serif;
+	border-radius: 10px;
+}
+
+.menu-container ul {
+	float: left;
+	margin: 0;
+}
+
+.menu-container ul li {
+	display: block;
+	float: left;
+	list-style-type: none;
+	border-color: black;
+	border-left: solid;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-color: white;
+  	transition: color 0.6s ease;
+/*	margin-top: 10px;
+	margin-bottom: 10px;*/
+}
+
+.menu-container ul li:hover {
+	color: #16A085;
+}
+
+.menu-container ul:first-child {
+	margin-left: 40px;
+}
+
+.menu-container ul:last-child {
+	border-radius: 1px;
+	border-right: solid;
+}
+
+.menu-container a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.view-container {
+	border: solid;
+	border-color: #16A085;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+.view-container h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.welcome-block {
+	text-align: center;
+	margin-top: 0;
+	background-color: #16A085;
+	color: white;
+	font-size: 300%;
+	overflow: hidden;
+}
+
+.description-block {
+	width: 70%;
+	margin: auto;
+}
+
+.description-block h1 {
+	font-size: 200%;
+}
+
+.control-panel {
+	width: 70%;
+	margin: auto;
+}
+
+.input-field {
+	overflow: hidden;
+}
+
+.input-field input {
+	float: left;
+	-webkit-appearance: none;
+	border: solid;
+	border-radius: 6px;
+	border-width: 2px;
+	border-color: #16A085;
+	color: #16A085;
+	width: 75%;
+	height: 25px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.input-field input:focus {
+	outline: 0;
+	color: #16A085;
+}
+
+.add-button-container {
+	float: left;
+	border: solid;
+	margin-left: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	border-radius: 6px;
+	border-width: 2px;
+	border-color: #16A085;
+	cursor: pointer;
+	width: 15%;
+	height: 27px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 27px;
+}
+
+.status-button-container {
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.status-button-container span {
+	float: left;
+	background-color: #16A085;
+	color: white;
+	border-radius: 5px;
+	width: 20%;
+	height: 27px;
+	line-height: 27px;
+	margin-left: 20%;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}

@@ -1,2 +1,16 @@
-<button type='button'>Click to switch to prize page</button>
-<p>Hi, I am bracket page</p>
+<!-- <button type='button'>Click to switch to prize page</button> -->
+
+<h1 style="margin-left:15%">Add teams to bracket:</h1>
+<div class="control-panel">
+	<div class="input-field">
+		<input type="text" ng-model="nameToAdd" placeholder="Enter names here:" ng-enter="add(nameToAdd)">
+		<span class="add-button-container" ng-click="add(nameToAdd)"><b>Enter</b></span>
+	</div>
+	<div class="status-button-container">
+		<span ng-click="start()">Start</span>
+		<span ng-click="reset()">Reset</span>
+	</div>
+</div>
+
+<div class="display-panel">
+</div>
