@@ -10,7 +10,7 @@ controllers.controller('HomeCtrl', ['$scope',
 controllers.controller('BracketCtrl', ['$scope',
 	function($scope) {
 		console.log("Setting up in bracket controller");
-		$scope.nameList = [];
+		$scope.nameList = ["sup"];
 		//$scope.inputValue = "";
 
 		$scope.add = function(nameToAdd) {
@@ -31,7 +31,24 @@ controllers.controller('BracketCtrl', ['$scope',
 			}
 			//how do you do dis?
 		}
-	}]);
+	}]).directive('aaa', function() {
+		var tmp = "<li>Helllo</li>";
+		function link1(scope, element, attrs) {
+			scope.$watch(scope.ha, function() {
+			    console.log('hey, myVar has changed!');
+			});
+
+			console.log("no error");
+			element.append(ha[0]);
+			console.log(ha.length);
+		}
+		return {
+			scope: {
+				ha: '=names'
+			},
+			link: link1
+		}
+	});
 
 controllers.controller('PrizeCtrl', ['$scope',
 	function($scope) {
