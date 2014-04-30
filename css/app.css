@@ -155,3 +155,35 @@
 	vertical-align: middle;
 	cursor: pointer;
 }
+
+.display-panel {
+	overflow: hidden;
+}
+
+.display-panel input {
+	background-color: #16A085;
+	color: white;
+	border: solid;
+	border-radius: 10px;
+	font-family: sans-serif;
+	font-size: 150%;
+	float: left;
+	list-style: none;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.display-panel input:focus {
+	color: #16A085;
+	background-color: white;
+	outline: none;
+	border-color: #16A085;
+/*	border-radius: 5px;
+	font-family: sans-serif;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: #16A085;*/
+}
